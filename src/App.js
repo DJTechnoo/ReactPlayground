@@ -1,14 +1,19 @@
 import React from 'react';
-import MyComponent from './components/MyComponent';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
+import Navigation from './components/Layout/Navigation';
+import Button from './components/Layout/Button';
 
-function App() {
+const App = () => {
+
   return (
+    <Router>
     <div>
-      <MyComponent stuff="YAS!"/>
+      <h1>Kompi</h1>
+      <Navigation/>
+      <Button name="Log inn"/>
+      <Button name="Registrer"/>
     </div>
-  );
+    </Router>
+  ) 
 }
 
 export default App;
